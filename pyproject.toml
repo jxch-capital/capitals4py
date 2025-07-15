@@ -1,0 +1,32 @@
+[project]
+name = "capitals4py"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "jxch",email = "qianbuhan@proton.me"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.116.1,<0.117.0)",
+    "uvicorn (>=0.35.0,<0.36.0)",
+    "dependency-injector (>=4.48.1,<5.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "pyqlib (>=0.9.6,<0.10.0)",
+    "joblib (>=1.1.0,<1.3.0)",
+    "pysocks (>=1.7.1,<2.0.0)",
+    "pydantic-settings (>=2.10.1,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+httpx = "^0.28.1"
+black = "^25.1.0"
+isort = "^6.0.1"
+jupyterlab = "^4.4.4"
+
