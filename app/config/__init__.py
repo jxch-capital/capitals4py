@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
-from config.app_setting import Settings
+from app.config.app_setting import Settings
 
 dir_project = Path(os.environ.get('DIR_PROJECT', r'D:\jxch-capital\capitals4py'))
 dir_env = dir_project / 'env'

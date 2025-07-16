@@ -1,4 +1,4 @@
-from config.app_setting import Settings
+from app.config.app_setting import Settings
 import socket
 import socks
 
