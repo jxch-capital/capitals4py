@@ -1,4 +1,4 @@
-from app.config import settings
+from app import container
 
 def test_config_settings():
-    print(settings)
+    print(container.app_settings())

@@ -13,6 +13,3 @@ env = os.environ.get('ENV_FORCE') or os.environ.get('ENV') or 'dev'
 env_file = dir_env / f'.env.{env}'
 
 load_dotenv(dotenv_path=env_file, override=True)
-
-
-settings = Settings()
