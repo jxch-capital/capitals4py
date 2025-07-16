@@ -1,5 +1,6 @@
 from pydantic import ConfigDict
 from pydantic_settings import BaseSettings
+from pathlib import Path
 
 class Settings(BaseSettings):
     proxy_addr: str = ""
@@ -9,4 +10,7 @@ class Settings(BaseSettings):
     dir_project: str = ""
 
     model_config = ConfigDict(frozen=True)
+
+    def get_qlib_data_path(self):
+        return Path(self.dir_qlib_data)
 
