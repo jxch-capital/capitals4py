@@ -1,7 +1,6 @@
 from fastapi import FastAPI
-from app.containers import Container
+from . import container
 
 app = FastAPI()
-container = Container()
 app.container = container
 

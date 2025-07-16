@@ -1,5 +1,4 @@
 import qlib
-from qlib.workflow import R
 from qlib.data import D
 
 def test_simple_data():
