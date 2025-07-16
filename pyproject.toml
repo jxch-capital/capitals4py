@@ -15,7 +15,8 @@ dependencies = [
     "pyqlib (>=0.9.6,<0.10.0)",
     "joblib (>=1.1.0,<1.3.0)",
     "pysocks (>=1.7.1,<2.0.0)",
-    "pydantic-settings (>=2.10.1,<3.0.0)"
+    "pydantic-settings (>=2.10.1,<3.0.0)",
+    "mplfinance (>=0.12.10b0,<0.13.0)"
 ]
 
 

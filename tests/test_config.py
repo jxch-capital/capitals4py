@@ -1,4 +1,4 @@
-from app import container
+from capitals4py import container
 
 
 def test_config_settings():

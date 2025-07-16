@@ -1,0 +1,1 @@
+proxychains docker buildx build --platform=linux/amd64 -t jxch/capitals4py:$(Get-Date -Format 'yyyyMMddHH') -t jxch/capitals4py:latest  -t jxch/capitals4py:$((Get-Content pyproject.toml | Select-String -Pattern 'version\s*=\s*"(.+)"').Matches[0].Groups[1].Value) . --push

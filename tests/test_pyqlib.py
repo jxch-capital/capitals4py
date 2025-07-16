@@ -1,5 +1,5 @@
 from qlib.data import D
-from app import container
+from capitals4py import container
 
 
 def test_simple_data():

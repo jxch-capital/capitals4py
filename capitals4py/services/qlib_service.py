@@ -1,5 +1,5 @@
-from app.services.qlib_protocol import QLibProtocol
-from app.config.app_setting import Settings
+from capitals4py.services.qlib_protocol import QLibProtocol
+from capitals4py.config.app_setting import Settings
 from qlib.tests.data import GetData
 import qlib
 
