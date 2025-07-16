@@ -3,4 +3,3 @@ from app import container
 
 app = FastAPI()
 app.container = container
-

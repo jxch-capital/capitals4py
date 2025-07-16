@@ -2,6 +2,7 @@ from pydantic import ConfigDict
 from pydantic_settings import BaseSettings
 from pathlib import Path
 
+
 class Settings(BaseSettings):
     proxy_addr: str = ""
     proxy_port: int = 10808
@@ -13,4 +14,3 @@ class Settings(BaseSettings):
 
     def get_qlib_data_path(self):
         return Path(self.dir_qlib_data)
-

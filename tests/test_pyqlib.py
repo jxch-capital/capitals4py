@@ -1,6 +1,7 @@
 from qlib.data import D
 from app import container
 
+
 def test_simple_data():
     container.qlib_service().qlib_init("us")
 
