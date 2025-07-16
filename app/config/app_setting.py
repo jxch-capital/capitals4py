@@ -1,6 +1,7 @@
-from pydantic import BaseModel, ConfigDict
+from pydantic import ConfigDict
+from pydantic_settings import BaseSettings
 
-class Settings(BaseModel):
+class Settings(BaseSettings):
     http_proxy_addr: str = ""
     http_proxy_port: int = 10808
     http_proxy_enable: bool = False
