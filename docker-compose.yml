@@ -1,0 +1,5 @@
+services:
+  capitals4py:
+    image: jxch/capitals4py
+    ports:
+      - "8080:8080"

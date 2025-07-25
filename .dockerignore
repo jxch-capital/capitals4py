@@ -1,2 +1,6 @@
-data/
-out/
+/data/
+/out/
+/.dockerignore
+/main.build/
+
+/main.dist/

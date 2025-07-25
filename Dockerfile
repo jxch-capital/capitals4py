@@ -11,9 +11,8 @@ EXPOSE 8080
 
 ENV DIR_PROJECT=/app
 ENV ENV=prod
-ENV PORT=8080
 
 COPY . .
 RUN poetry install --only-root
 
-ENTRYPOINT ["sh", "-c", "poetry run uvicorn capitals4py.main:capitals4py --host 0.0.0.0 --port ${PORT}"]
+ENTRYPOINT ["sh", "-c", "poetry run uvicorn capitals4py.main:capitals4py --host 0.0.0.0 --port 8080"]

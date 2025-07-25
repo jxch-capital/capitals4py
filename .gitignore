@@ -1,2 +1,5 @@
 /data/
 /out/
+!/main.build/
+
+!/main.dist/
