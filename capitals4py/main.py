@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from capitals4py import container
+from capitals4py.api import router
 
-capitals4py = FastAPI()
-capitals4py.container = container
+app = FastAPI()
+app.container = container
+app.include_router(router)

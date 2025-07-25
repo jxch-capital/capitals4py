@@ -15,4 +15,4 @@ ENV ENV=prod
 COPY . .
 RUN poetry install --only-root
 
-ENTRYPOINT ["sh", "-c", "poetry run uvicorn capitals4py.main:capitals4py --host 0.0.0.0 --port 8080"]
+ENTRYPOINT ["sh", "-c", "poetry run uvicorn capitals4py.main:app --host 0.0.0.0 --port 8080"]
