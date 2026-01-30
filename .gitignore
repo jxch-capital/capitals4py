@@ -1,5 +1,6 @@
+/.idea/
 /data/
 /out/
-!/main.build/
-
-!/main.dist/
+/main.build/
+/main.dist/
+**/__pycache__/
